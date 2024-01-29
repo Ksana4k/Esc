@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmf7wour8pwix"]
+
+[ext_resource type="Script" path="res://addons/sprite_cutter/AtlasScene.gd" id="1_fn7so"]
+[ext_resource type="Texture2D" uid="uid://dk2b8wwnfqon1" path="res://Game_Files/art/GrassDirt.png" id="2_curwb"]
+
+[node name="AtlasScene" type="Node"]
+script = ExtResource("1_fn7so")
+destination_path = "res://grass/grass1"
+
+[node name="GrassDirt" type="Sprite2D" parent="."]
+position = Vector2(167, 80)
+scale = Vector2(2.0625, 1.95161)
+texture = ExtResource("2_curwb")
+region_enabled = true
+region_rect = Rect2(95.5556, 0.444445, 32.5926, 31.7037)

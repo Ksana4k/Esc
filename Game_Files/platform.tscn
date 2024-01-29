@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bipkkacvvcl3"]
+
+[ext_resource type="Texture2D" uid="uid://8i4utio22mcl" path="res://grass/grass1/GrassDirt.atlastex" id="1_wvmey"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3g5q4"]
+size = Vector2(32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wvmey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3g5q4")

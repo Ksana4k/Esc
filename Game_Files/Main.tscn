@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://cam46fceqdvr3"]
+
+[ext_resource type="PackedScene" uid="uid://biixhwf16oved" path="res://Game_Files/player.tscn" id="2_8ngn7"]
+[ext_resource type="Script" path="res://Game_Files/world/World1.gd" id="3_wfoer"]
+[ext_resource type="Texture2D" uid="uid://c7khkiuronaj6" path="res://Game_Files/art/2020_05_13_pixel_art_forest.png" id="4_m4ncq"]
+[ext_resource type="PackedScene" uid="uid://bipkkacvvcl3" path="res://Game_Files/platform.tscn" id="5_pp5t2"]
+
+[sub_resource type="GDScript" id="GDScript_e357s"]
+script/source = "extends Node2D
+
+func _ready():
+	pass
+
+func _process(_delta):
+	pass
+"
+
+[node name="Main" type="Node2D"]
+script = SubResource("GDScript_e357s")
+
+[node name="World1" type="Node2D" parent="."]
+script = ExtResource("3_wfoer")
+
+[node name="ColorRect" type="ColorRect" parent="World1"]
+offset_right = 320.0
+offset_bottom = 180.0
+color = Color(0, 0, 0, 1)
+
+[node name="20200513PixelArtForest" type="Sprite2D" parent="World1"]
+position = Vector2(160, 92)
+scale = Vector2(0.345905, 0.23203)
+texture = ExtResource("4_m4ncq")
+
+[node name="StaticBody2D2" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(16, 184)
+
+[node name="StaticBody2D3" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(48, 184)
+
+[node name="StaticBody2D4" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(80, 184)
+
+[node name="StaticBody2D5" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(112, 184)
+
+[node name="StaticBody2D6" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(144, 184)
+
+[node name="StaticBody2D7" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(192, 160)
+
+[node name="StaticBody2D8" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(192, 160)
+
+[node name="StaticBody2D9" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(224, 160)
+
+[node name="StaticBody2D10" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(272, 144)
+
+[node name="StaticBody2D11" parent="World1" instance=ExtResource("5_pp5t2")]
+position = Vector2(304, 128)
+
+[node name="Player" parent="World1" instance=ExtResource("2_8ngn7")]
+position = Vector2(48, 72)
