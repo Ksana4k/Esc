@@ -59,7 +59,7 @@ position = Vector2(224, 160)
 position = Vector2(272, 144)
 
 [node name="StaticBody2D11" parent="World1" instance=ExtResource("5_pp5t2")]
-position = Vector2(304, 128)
+position = Vector2(304, 136)
 
 [node name="Player" parent="World1" instance=ExtResource("2_8ngn7")]
 position = Vector2(48, 72)
